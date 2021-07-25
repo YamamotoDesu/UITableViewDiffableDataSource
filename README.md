@@ -22,6 +22,6 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 <table border="0">
 <tr>
 <td><img src="https://user-images.githubusercontent.com/47273077/126889504-a57cef79-78b6-40ac-914c-335af1b73edf.png" width="600"></td>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889445-55f19812-4369-45ca-b3bc-025b39047603.png" width="600"></td>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889569-7821efaa-9f7f-41bc-aa75-87f074b11fb2.png" width="600"></td>
 </tr>
 </table>
