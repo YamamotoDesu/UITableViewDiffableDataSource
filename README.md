@@ -90,3 +90,26 @@ tableView.cellLayoutMarginsFollowReadableWidth = true
     </tr>
 </table>
 
+##  To Check Dark Mode
+```swift
+//-------acronym--------------
+    // Called when the iOS interface environment changes.
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+      super.traitCollectionDidChange(previousTraitCollection)
+
+        self.heartMark.tintColor = UITraitCollection.isDarkMode ? .systemYellow : .systemPink
+    }
+//---------------------
+
+
+extension UITraitCollection {
+
+    public static var isDarkMode: Bool {
+        if #available(iOS 13, *), current.userInterfaceStyle == .dark {
+            return true
+        }
+        return false
+    }
+}
+```
+
