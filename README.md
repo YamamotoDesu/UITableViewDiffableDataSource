@@ -13,8 +13,8 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ## iPhone Image
 <table border="0">
 <tr>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889504-a57cef79-78b6-40ac-914c-335af1b73edf.png" width="600"></td>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889445-55f19812-4369-45ca-b3bc-025b39047603.png" width="600"></td>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889714-397a476a-7154-4023-947b-411e753a5e5d.png" width="300"></td>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889687-a6773867-d972-41cb-88c3-20463e7e833a.png" width="300"></td>
 </tr>
 </table>
 
