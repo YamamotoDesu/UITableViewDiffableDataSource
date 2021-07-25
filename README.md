@@ -99,7 +99,7 @@ tableView.cellLayoutMarginsFollowReadableWidth = true
     </tr>
 </table>
 
-##  Check　current　userinterfacestyle　programmatically
+##  Check current userinterfacestyle programmatically
 ```swift
 //-------acronym--------------
     // Called when the iOS interface environment changes.
