@@ -14,6 +14,7 @@
 		7BF49EF326AC107E00718FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF49EF126AC107E00718FCC /* LaunchScreen.storyboard */; };
 		7BF49F0126AC176D00718FCC /* RestaurantTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF49F0026AC176D00718FCC /* RestaurantTableTableViewController.swift */; };
 		7BF49F0426AC448500718FCC /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF49F0326AC448500718FCC /* RestaurantTableViewCell.swift */; };
+		7BF49F0726AD3A8300718FCC /* RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BF49F0626AD3A8300718FCC /* RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7BF49EF426AC107F00718FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BF49F0026AC176D00718FCC /* RestaurantTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableTableViewController.swift; sourceTree = "<group>"; };
 		7BF49F0326AC448500718FCC /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		7BF49F0626AD3A8300718FCC /* RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		7BF49EDA26AC107A00718FCC = {
 			isa = PBXGroup;
 			children = (
+				7BF49F0626AD3A8300718FCC /* RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif */,
 				7BF49EE526AC107A00718FCC /* FoodPin */,
 				7BF49EE426AC107A00718FCC /* Products */,
 			);
@@ -128,6 +131,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BF49EF326AC107E00718FCC /* LaunchScreen.storyboard in Resources */,
+				7BF49F0726AD3A8300718FCC /* RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif in Resources */,
 				7BF49EF026AC107E00718FCC /* Assets.xcassets in Resources */,
 				7BF49EEE26AC107A00718FCC /* Main.storyboard in Resources */,
 			);
