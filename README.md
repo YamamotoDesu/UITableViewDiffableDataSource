@@ -26,3 +26,49 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 <td><img src="https://user-images.githubusercontent.com/47273077/126889569-7821efaa-9f7f-41bc-aa75-87f074b11fb2.png" width="600"></td>
 </tr>
 </table>
+
+
+
+## To connect a diffable data source to a table view
+```swift
+
+    lazy var dataSource = configureDataSource()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        //Assign the diffable data source to your table view.
+        tableView.dataSource = dataSource
+        
+        //Generate the current state of the table data by creating a snapshot
+        var snapshot = NSDiffableDataSourceSnapshot<Section, String>()
+        snapshot.appendSections([.all])
+        snapshot.appendItems(restaurantNames, toSection: .all)
+        
+        //Call the apply() function of the data source to populate the data
+        dataSource.apply(snapshot, animatingDifferences: false)
+        
+        
+    }
+    
+    func configureDataSource() -> UITableViewDiffableDataSource<Section, String> {
+        let cellIdentifier = "favoritecell"
+        //Create a UITableViewDiffableDataSource object to connect with your table andprovide the configuration of the table view cells.
+        let dataSource = UITableViewDiffableDataSource<Section, String>(
+            tableView: tableView,
+            cellProvider: { tableView, indexPath, restaurantName in
+                let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RestaurantTableViewCell
+                cell.nameLabel.text = restaurantName
+                cell.thumbnailImageView.image = UIImage(named: self.restaurantImages[indexPath.row])
+                cell.locationLabel.text = self.restaurantLocations[indexPath.row]
+                cell.typeLabel.text = self.restaurantTypes[indexPath.row]
+                cell.heartMark.isHidden = !self.restaurantIsFavorites[indexPath.row]
+                cell.heartMark.tintColor = UITraitCollection.isDarkMode ? .systemYellow : .blue
+                return cell
+                
+            }
+        )
+        return dataSource
+        
+    }
+```
