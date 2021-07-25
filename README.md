@@ -26,4 +26,4 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 </tr>
 </table>
 
-![demo](https://github.com/YamamotoDesu/LottieAnimation-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-07-23%2020.11.14.gif)  
+![demo](https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-07-25%2015.20.45.gif)  
