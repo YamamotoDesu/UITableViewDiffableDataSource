@@ -78,3 +78,15 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```swift
 tableView.cellLayoutMarginsFollowReadableWidth = true
 ```
+<table border="0">
+<tr>
+    <caption>iPad Image</caption>
+    <tr>
+        <th>tableView.cellLayoutMarginsFollowReadableWidth = false</th>
+        <th>tableView.cellLayoutMarginsFollowReadableWidth = true</th>
+    </tr>
+    <td><img src="https://user-images.githubusercontent.com/47273077/126890181-a65afe2c-01f9-4e3d-9427-b99493329514.png" width="400"></td>
+    <td><img src="https://user-images.githubusercontent.com/47273077/126889569-7821efaa-9f7f-41bc-aa75-87f074b11fb2.png" width="400"></td>
+    </tr>
+</table>
+
