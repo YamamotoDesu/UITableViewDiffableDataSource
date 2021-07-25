@@ -12,21 +12,30 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 
 ### iPhone Image
 <table border="0">
-<tr>
-<td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-07-25%2015.20.45.gif" width="300"></td>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889714-397a476a-7154-4023-947b-411e753a5e5d.png" width="300"></td>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889687-a6773867-d972-41cb-88c3-20463e7e833a.png" width="300"></td>
-</tr>
+    <tr>
+        <tr>
+            <th>Gif image</th>
+            <th>Standard</th>
+            <th>Dark</th>
+        </tr>
+        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-07-25%2015.20.45.gif" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/126889714-397a476a-7154-4023-947b-411e753a5e5d.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/126889687-a6773867-d972-41cb-88c3-20463e7e833a.png" width="300"></td>
+    </tr>
 </table>
 
 ### iPad Image
 <table border="0">
-<tr>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889504-a57cef79-78b6-40ac-914c-335af1b73edf.png" width="600"></td>
-<td><img src="https://user-images.githubusercontent.com/47273077/126889569-7821efaa-9f7f-41bc-aa75-87f074b11fb2.png" width="600"></td>
-</tr>
+    <tr>
+        <tr>
+            <th>Standard</th>
+            <th>Dark</th>
+        </tr>
+        <td><img src="https://user-images.githubusercontent.com/47273077/126889504-a57cef79-78b6-40ac-914c-335af1b73edf.png" width="600"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/126889569-7821efaa-9f7f-41bc-aa75-87f074b11fb2.png" width="600"></td>
+    </tr>
 </table>
-
+<table border="0">
 
 # Sourcecode
 ## To connect a diffable data source to a table view
