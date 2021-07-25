@@ -10,9 +10,21 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 - Swift 5  
 - iOS 13 and onward
 
-## Vertical Image
-<img src="https://user-images.githubusercontent.com/47273077/126859753-5640b316-a596-44a3-87b7-6766307cdda6.png" width="300">
+## iPhone Image
+<table border="0">
+<tr>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889504-a57cef79-78b6-40ac-914c-335af1b73edf.png" width="600"></td>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889445-55f19812-4369-45ca-b3bc-025b39047603.png" width="600"></td>
+</tr>
+</table>
 
+## iPad Image
+<table border="0">
+<tr>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889504-a57cef79-78b6-40ac-914c-335af1b73edf.png" width="600"></td>
+<td><img src="https://user-images.githubusercontent.com/47273077/126889445-55f19812-4369-45ca-b3bc-025b39047603.png" width="600"></td>
+</tr>
+</table>
 
 ## Horizontal Image
 <img src="https://user-images.githubusercontent.com/47273077/126859969-ebb6c07c-c70a-456b-9be4-7f51c141de2e.png" width="600">
