@@ -74,7 +74,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```
 
 # Something notes
-##  To prevent text content from becoming overly wide for iPad
+##  To prevent content from becoming overly wide for iPad
 ```swift
 tableView.cellLayoutMarginsFollowReadableWidth = true
 ```
