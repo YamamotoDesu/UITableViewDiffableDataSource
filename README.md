@@ -81,6 +81,36 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
         
     }
 ```
+    
+## Returns the swipe actions to display on the leading edge of the row  
+```swift
+        override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        // Get the selected restaurant
+        guard let restaurant = self.dataSource.itemIdentifier(for: indexPath) else {
+            return UISwipeActionsConfiguration()
+        }
+        
+        // Favorite action
+        let favoriteAction = UIContextualAction(style: .normal, title: "") { (action, sourceView, completionHandler) in
+            
+            let cell = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
+            cell.heartMark.isHidden = !restaurant.isFavorite
+            cell.heartMark.tintColor = UITraitCollection.isDarkMode ? .systemYellow : .blue
+            self.restaurantIsFavorites[indexPath.row] = !restaurant.isFavorite
+            tableView.reloadData()
+            
+            // Call completion handler to dismiss tbe action button
+            completionHandler(true)
+        }
+        
+        favoriteAction.backgroundColor = UIColor.systemYellow
+        favoriteAction.image = UIImage(systemName: "heart.fill")
+        
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [favoriteAction])
+        return swipeConfiguration
+    }
+```
 
 # Something notes
 ##  To prevent content from becoming overly wide for iPad
