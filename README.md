@@ -111,6 +111,62 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
         return swipeConfiguration
     }
 ```
+    
+## Returns the swipe actions to display on the trailing edge of the row  
+```swift
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        // Get the selected restaurant
+        guard let restaurant = self.dataSource.itemIdentifier(for: indexPath) else {
+            return UISwipeActionsConfiguration()
+        }
+        
+        // Delete action
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            
+            var snapshot = self.dataSource.snapshot()
+            snapshot.deleteItems([restaurant])
+            self.dataSource.apply(snapshot, animatingDifferences: true)
+            
+            // Call completion handler to dismiss tbe action button
+            completionHandler(true)
+        }
+        
+        //Share action
+        let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
+            let defaultText = "Just checking in at " + restaurant.name
+            
+            let activityController: UIActivityViewController
+            
+            if let imageToShare = UIImage(named: restaurant.image) {
+                activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
+            } else {
+                activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+            }
+            
+            if let popoverController = activityController.popoverPresentationController {
+                if let cell = tableView.cellForRow(at: indexPath) {
+                    popoverController.sourceView = cell
+                    popoverController.sourceRect = cell.bounds
+                    
+                }
+            }
+            
+            self.present(activityController, animated: true, completion: nil)
+            completionHandler(true)
+        }
+        
+        deleteAction.backgroundColor = UIColor.systemRed
+        deleteAction.image = UIImage(systemName: "trash")
+        
+        shareAction.backgroundColor = UIColor.systemOrange
+        shareAction.image = UIImage(systemName: "square.and.arrow.up")
+        
+        // Configure both actions as swipe action
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
+        return swipeConfiguration
+    }
+```
 
 # Something notes
 ##  To prevent content from becoming overly wide for iPad
