@@ -82,7 +82,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
     }
 ```
     
-## Returns the swipe actions to display on the leading edge of the row  
+## Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
 ```swift
         override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -112,7 +112,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
     }
 ```
     
-## Returns the swipe actions to display on the trailing edge of the row  
+## Returns the swipe actions to display on the trailing edge of the row(iOS 11 and onward)
 ```swift
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
