@@ -38,7 +38,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 <table border="0">
 
 # Sourcecode
-## To connect a diffable data source to a table view
+## To connect a diffable data source to a table view(iOS 13 and onward)
 ```swift
 
     lazy var dataSource = configureDataSource()
