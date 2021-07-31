@@ -86,8 +86,11 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 
 ## Functionality
 ### Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
-```swift
-        override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+<img src="https://user-images.githubusercontent.com/47273077/127734414-c5409c84-54a4-41e7-9ff1-f140e2185d8b.png" width="200">  
+    
+```swift  
+        
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         // Get the selected restaurant
         guard let restaurant = self.dataSource.itemIdentifier(for: indexPath) else {
@@ -114,8 +117,11 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
         return swipeConfiguration
     }
 ```
+
     
 ### Returns the swipe actions to display on the trailing edge of the row(iOS 11 and onward)
+<img src="https://user-images.githubusercontent.com/47273077/127734624-53845a01-aaf8-448b-8706-58ef3b4de1b0.png" width="200">
+
 ```swift
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
