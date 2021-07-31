@@ -227,8 +227,8 @@ extension UITraitCollection {
             <th>Setting</th>
             <th>Font Image</th>
         </tr>
-        <td><img src="https://user-images.githubusercontent.com/47273077/127729880-97a0541a-cf4e-4f57-b3f0-3ee3df11f574.png" width="600"></td>
-        <td><img src="https://user-images.githubusercontent.com/47273077/127729904-3835f995-0a39-4785-8ae2-f12dcd84727c.png" width="600"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127729880-97a0541a-cf4e-4f57-b3f0-3ee3df11f574.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127729904-3835f995-0a39-4785-8ae2-f12dcd84727c.png" width="300"></td>
     </tr>
 </table>
 <table border="0">
