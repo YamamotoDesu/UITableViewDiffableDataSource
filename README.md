@@ -9,6 +9,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 - Xcode Version 12.4 (12D4e)
 - Swift 5  
 - iOS 13 and onward
+- Google Font(Nunito Font: https://fonts.google.com/specimen/Nunito)
 
 ### iPhone Image
 <table border="0">
@@ -209,4 +210,26 @@ extension UITraitCollection {
     }
 }
 ```
+
+##  Set custom font programmatically
+```swift
+    @IBOutlet var typeLabel: UILabel! {
+        didSet {
+            if let cutomFont = UIFont(name: "Nunito-Regular", size: 20.0) {
+                typeLabel.font = UIFontMetrics(forTextStyle: .title1).scaledFont(for: cutomFont)
+            }
+        }
+    }
+```
+<table border="0">
+    <tr>
+        <tr>
+            <th>Setting</th>
+            <th>Font Image</th>
+        </tr>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127729880-97a0541a-cf4e-4f57-b3f0-3ee3df11f574.png" width="600"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127729904-3835f995-0a39-4785-8ae2-f12dcd84727c.png" width="600"></td>
+    </tr>
+</table>
+<table border="0">
 
