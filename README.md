@@ -38,7 +38,8 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 <table border="0">
 
 # Sourcecode
-## To connect a diffable data source to a table view(iOS 13 and onward)
+## Modern UITable View
+### To connect a diffable data source to a table view(iOS 13 and onward)
 ```swift
 
     lazy var dataSource = configureDataSource()
@@ -81,8 +82,9 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
         
     }
 ```
-    
-## Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
+
+## Functionality
+### Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
 ```swift
         override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
@@ -112,7 +114,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
     }
 ```
     
-## Returns the swipe actions to display on the trailing edge of the row(iOS 11 and onward)
+### Returns the swipe actions to display on the trailing edge of the row(iOS 11 and onward)
 ```swift
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
