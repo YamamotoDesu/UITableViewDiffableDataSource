@@ -178,6 +178,45 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```
 
 # Something notes
+##  In response to dynamic type changes, change cell dynamically
+<table border="0">
+    <tr>
+        <tr>
+            <th>Gif image</th>
+            <th>Standard</th>
+            <th>Large</th>
+        </tr>
+        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2011%20-%202021-08-01%2011.08.04.gif" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127757087-ee13e14d-de3a-4203-94be-8cd33b3be284.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127757066-2a93286c-307b-4870-9321-1e028f6e6282.png" width="300"></td>
+    </tr>
+</table>  
+    
+
+```swift  
+ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        super.traitCollectionDidChange(previousTraitCollection)
+        
+        // perform action here when user changes the text size
+        switch self.traitCollection.preferredContentSizeCategory {
+        case .extraExtraLarge, .extraExtraExtraLarge, .accessibilityExtraLarge, .accessibilityExtraExtraLarge, .accessibilityExtraExtraExtraLarge:
+            self.isDynamicLargeType = true
+        case .extraSmall, .small, .medium, .accessibilityMedium, .large, .extraLarge:
+            self.isDynamicLargeType = false
+        default:
+            self.isDynamicLargeType = false
+        }
+        
+        // reload view here when user changes the text size and change cell identifier
+        if previousTraitCollection?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
+            self.dataSource = configureDataSource()
+            self.viewDidLoad()
+        }
+        
+    }
+```
+<img src="https://user-images.githubusercontent.com/47273077/127757209-bd387b1a-0d27-4b08-8405-07eb0c03763c.png" height="500">
+
 ##  To prevent content from becoming overly wide for iPad
 ```swift
 tableView.cellLayoutMarginsFollowReadableWidth = true
