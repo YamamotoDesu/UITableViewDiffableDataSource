@@ -186,7 +186,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
             <th>Standard</th>
             <th>Large</th>
         </tr>
-        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2011%20-%202021-08-01%2011.08.04.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2011%20-%202021-08-01%2011.10.28.gif" width="300"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/127757087-ee13e14d-de3a-4203-94be-8cd33b3be284.png" width="300"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/127757066-2a93286c-307b-4870-9321-1e028f6e6282.png" width="300"></td>
     </tr>
