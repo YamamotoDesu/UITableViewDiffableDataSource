@@ -93,8 +93,8 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
             <th>Locating</th>
             <th>Routing</th>
         </tr>
-        <td><img src="https://user-images.githubusercontent.com/47273077/127778215-fd130ff8-f72a-4565-a9de-94d564b94f99.png" width="300"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/127778176-1ff08ad5-b5fb-4ad2-a837-97e24a551be6.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127778215-fd130ff8-f72a-4565-a9de-94d564b94f99.png" width="300"></td>
     </tr>
 </table>
 
