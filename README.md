@@ -179,6 +179,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 
 # Something notes
 ##  In response to dynamic type changes, change cell dynamically
+Reference: Apple's iOS Human Interface Guidelines  
 https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/
 <table border="0">
     <tr>
