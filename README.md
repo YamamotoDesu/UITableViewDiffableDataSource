@@ -232,6 +232,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
         <td><img src="https://user-images.githubusercontent.com/47273077/127757658-a86b94d0-a84b-47ff-9dd9-5d8bb75a3c62.png" width="300"></td>
     </tr>
 </table>  
+
 ```swift
     override func viewDidLoad() {
         super.viewDidLoad()
