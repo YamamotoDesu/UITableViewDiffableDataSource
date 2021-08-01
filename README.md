@@ -277,6 +277,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
     }
     
 ```
+<img src="https://user-images.githubusercontent.com/47273077/127757835-53b6a111-9363-44b4-8262-6b9a7a8d324f.png" height="500">
 
 ##  To prevent content from becoming overly wide for iPad
 ```swift
