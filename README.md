@@ -217,7 +217,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```
 <img src="https://user-images.githubusercontent.com/47273077/127757209-bd387b1a-0d27-4b08-8405-07eb0c03763c.png" height="500">
 
-## Set a transparent navigation bar  
+## Set Transparent navigation bar  
 <table border="0">
     <tr>
         <tr>
@@ -232,6 +232,50 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
         <td><img src="https://user-images.githubusercontent.com/47273077/127757658-a86b94d0-a84b-47ff-9dd9-5d8bb75a3c62.png" width="300"></td>
     </tr>
 </table>  
+```swift
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationController?.hidesBarsOnSwipe = true
+        if #available(iOS 14.0, *) {
+          navigationItem.backButtonDisplayMode = .minimal
+        } else {
+          navigationItem.backButtonTitle = " "
+        }
+    
+        // To customize the navigation bar, you first need to retrieve the currentUINavigationBarAppearance object
+        // The standardAppearance property contains thecurrent appearance settings for the standard size navigation bar
+        if let appearance = navigationController?.navigationBar.standardAppearance {
+            appearance.configureWithTransparentBackground()
+            if let customFont = UIFont(name: "Nunito-Bold", size: 40.0) {
+
+                appearance.titleTextAttributes = [.foregroundColor:
+                                                    UIColor(named: "NavigationBarTitle")!, .font: customFont]
+                appearance.largeTitleTextAttributes = [.foregroundColor:
+                                                        UIColor(named: "NavigationBarTitle")!, .font: customFont]
+            }
+
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.compactAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+    }
+    
+        func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let navBarAppearence = UINavigationBarAppearance()
+        
+        var backButtonImage = UIImage(systemName: "arrow.backword", withConfiguration: UIImage.SymbolConfiguration(pointSize: 20.0, weight: .bold))
+        backButtonImage = backButtonImage?.withAlignmentRectInsets(UIEdgeInsets(top: 0, left: -10, bottom: 0, right: 0))
+        
+        UINavigationBar.appearance().tintColor = .white
+        UINavigationBar.appearance().standardAppearance = navBarAppearence
+        UINavigationBar.appearance().compactAppearance = navBarAppearence
+        UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearence
+       
+        return true
+    }
+    
+```
 
 ##  To prevent content from becoming overly wide for iPad
 ```swift
