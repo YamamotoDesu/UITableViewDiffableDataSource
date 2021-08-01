@@ -217,6 +217,22 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```
 <img src="https://user-images.githubusercontent.com/47273077/127757209-bd387b1a-0d27-4b08-8405-07eb0c03763c.png" height="500">
 
+## Set a transparent navigation bar  
+<table border="0">
+    <tr>
+        <tr>
+            <th>Before</th>
+            <th>Before</th>
+            <th>After</th>
+            <th>After</th>
+        </tr>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127757537-71f69247-58b1-4ebf-964e-8c79799775ec.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127757552-d6c5ab71-3732-43fe-9d0e-ef04ef4480cc.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127757649-e38d34a7-bd78-4e81-827b-b67b204dc761.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127757658-a86b94d0-a84b-47ff-9dd9-5d8bb75a3c62.png" width="300"></td>
+    </tr>
+</table>  
+
 ##  To prevent content from becoming overly wide for iPad
 ```swift
 tableView.cellLayoutMarginsFollowReadableWidth = true
