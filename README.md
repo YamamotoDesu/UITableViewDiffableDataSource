@@ -85,6 +85,19 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```
 
 ## Functionality
+### Routing With MapKit
+<img src="" width="200">  
+<img src="" width="200">  
+<table border="0">
+    <tr>
+        <tr>
+            <th>Locating</th>
+            <th>Routing</th>
+        </tr>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127778215-fd130ff8-f72a-4565-a9de-94d564b94f99.png" width="300"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127778176-1ff08ad5-b5fb-4ad2-a837-97e24a551be6.png" width="300"></td>
+    </tr>
+</table>
 ### Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
 <img src="https://user-images.githubusercontent.com/47273077/127734414-c5409c84-54a4-41e7-9ff1-f140e2185d8b.png" width="200">  
     
