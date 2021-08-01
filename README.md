@@ -85,9 +85,7 @@ https://developer.apple.com/documentation/uikit/uitableviewdiffabledatasource
 ```
 
 ## Functionality
-### Routing With MapKit
-<img src="" width="200">  
-<img src="" width="200">  
+### Routing With MapKit 
 <table border="0">
     <tr>
         <tr>
