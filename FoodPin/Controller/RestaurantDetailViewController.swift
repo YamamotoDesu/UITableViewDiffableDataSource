@@ -21,10 +21,16 @@ class RestaurantDetailViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 14.0, *) {
+          navigationItem.backButtonDisplayMode = .minimal
+        } else {
+          navigationItem.backButtonTitle = " "
+        }
+        
         tableView.separatorEffect = .none
         tableView.delegate = self
         tableView.dataSource = self
-        navigationController?.navigationItem.backButtonTitle  = ""
         
         navigationController?.navigationBar.prefersLargeTitles = false
         navigationController?.navigationBar.isTranslucent = true
@@ -46,13 +52,21 @@ class RestaurantDetailViewController: UIViewController {
         navigationController?.hidesBarsOnSwipe = false
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showMap" {
+            let destinationContoroller = segue.destination as! MapViewController
+            
+            destinationContoroller.restaurant = resutaurant
+        }
+    }
 
 }
 
 
 extension RestaurantDetailViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -66,6 +80,10 @@ extension RestaurantDetailViewController: UITableViewDataSource, UITableViewDele
             cell.column1TextLabel.text = resutaurant.location
             cell.column2TitleLabel.text = "Phone"
             cell.column2TextLabel.text = resutaurant.phone
+            return cell
+        case 2:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailMapCell.self), for: indexPath) as! RestaurantDetailMapCell
+            cell.configure(location: resutaurant.location)
             return cell
         default:
             fatalError("Failed to intstantiate the table view cell for detail view controller")

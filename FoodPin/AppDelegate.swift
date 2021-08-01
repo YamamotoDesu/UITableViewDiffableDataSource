@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().standardAppearance = navBarAppearence
         UINavigationBar.appearance().compactAppearance = navBarAppearence
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearence
-        
+       
         return true
     }
 

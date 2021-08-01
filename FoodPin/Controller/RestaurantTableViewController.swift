@@ -65,13 +65,13 @@ class RestaurantTableViewController: UITableViewController {
         if let appearance = navigationController?.navigationBar.standardAppearance {
             appearance.configureWithTransparentBackground()
             if let customFont = UIFont(name: "Nunito-Bold", size: 40.0) {
-                
+
                 appearance.titleTextAttributes = [.foregroundColor:
                                                     UIColor(named: "NavigationBarTitle")!, .font: customFont]
                 appearance.largeTitleTextAttributes = [.foregroundColor:
                                                         UIColor(named: "NavigationBarTitle")!, .font: customFont]
             }
-            
+
             navigationController?.navigationBar.standardAppearance = appearance
             navigationController?.navigationBar.compactAppearance = appearance
             navigationController?.navigationBar.scrollEdgeAppearance = appearance
@@ -88,7 +88,8 @@ class RestaurantTableViewController: UITableViewController {
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
-        // perform action here when user changes the text size to the largest (non-accessbility)
+        
+        // perform action here when user changes the text size
         switch self.traitCollection.preferredContentSizeCategory {
         case .extraExtraLarge, .extraExtraExtraLarge, .accessibilityExtraLarge, .accessibilityExtraExtraLarge, .accessibilityExtraExtraExtraLarge:
             self.isDynamicLargeType = true
@@ -97,8 +98,9 @@ class RestaurantTableViewController: UITableViewController {
         default:
             self.isDynamicLargeType = false
         }
+        
+        // reload view here when user changes the text size
         if previousTraitCollection?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
-            // 設定が変わったときにやりたいこと
             self.dataSource = configureDataSource()
             self.viewDidLoad()
         }
@@ -206,7 +208,7 @@ class RestaurantTableViewController: UITableViewController {
                 }
             }
             
-            self.present(activityController, animated: true, completion: nil)
+            self.present(activityController, animated: false, completion: nil)
             completionHandler(true)
         }
         

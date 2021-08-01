@@ -12,5 +12,9 @@ class NavigationController: UINavigationController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return topViewController?.preferredStatusBarStyle ?? .default
     }
+    // For iOS 13 and onward
+    override open var childForStatusBarStyle: UIViewController? {
+        return topViewController
+    }
 
 }
