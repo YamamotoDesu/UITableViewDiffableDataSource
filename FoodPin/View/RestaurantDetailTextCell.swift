@@ -12,6 +12,7 @@ class RestaurantDetailTextCell: UITableViewCell {
     @IBOutlet var descriptionLabel: UILabel! {
         didSet {
             descriptionLabel.numberOfLines = 0
+            descriptionLabel.adjustsFontForContentSizeCategory = true
         }
     }
 }

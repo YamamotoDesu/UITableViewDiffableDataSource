@@ -24,8 +24,11 @@ class RestaurantDetailViewController: UIViewController {
         tableView.separatorEffect = .none
         tableView.delegate = self
         tableView.dataSource = self
+        navigationController?.navigationItem.backButtonTitle  = ""
         
         navigationController?.navigationBar.prefersLargeTitles = false
+        navigationController?.navigationBar.isTranslucent = true
+        tableView.contentInsetAdjustmentBehavior = .never
         
         //Configure header view
         headerView.nameLabel.text = resutaurant.name
@@ -35,6 +38,13 @@ class RestaurantDetailViewController: UIViewController {
         let heartImage = resutaurant.isFavorite ? "heart.fill" : "heart"
         headerView.heartButton.tintColor = resutaurant.isFavorite ? .systemYellow : .white
         headerView.heartButton.setImage(UIImage(systemName: heartImage), for: .normal)
+    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = false
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
 }
