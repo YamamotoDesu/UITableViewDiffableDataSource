@@ -10,6 +10,7 @@ import UIKit
 class RestaurantDetailHeaderView: UIView {
     
     @IBOutlet var headerImageView: UIImageView!
+    @IBOutlet var ratingImgeView: UIImageView!
     @IBOutlet var nameLabel: UILabel! {
         didSet {
             nameLabel.numberOfLines = 0

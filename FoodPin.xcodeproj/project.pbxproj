@@ -26,6 +26,10 @@
 		7BB28F4B26B4DE6500184C0D /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BB28F4A26B4DE6500184C0D /* Nunito-Bold.ttf */; };
 		7BB28F4E26B4ED5F00184C0D /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB28F4D26B4ED5F00184C0D /* RestaurantDetailHeaderView.swift */; };
 		7BD35E1926B7003500D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 01.14.26.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BD35E1826B7003500D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 01.14.26.gif */; };
+		7BD35E1E26B7678A00D5C985 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD35E1D26B7678A00D5C985 /* ReviewViewController.swift */; };
+		7BD35E2126B79D5A00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.25.37.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BD35E2026B79D5A00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.25.37.gif */; };
+		7BD35E2426B7A03E00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.38.04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BD35E2326B7A03E00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.38.04.gif */; };
+		7BD8E76526B7F2AF00A0F7B0 /* RocketSim Recording - iPhone 12 - 2021-08-02 18.18.04.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7BD8E76426B7F2AF00A0F7B0 /* RocketSim Recording - iPhone 12 - 2021-08-02 18.18.04.gif */; };
 		7BF49EE726AC107A00718FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF49EE626AC107A00718FCC /* AppDelegate.swift */; };
 		7BF49EE926AC107A00718FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF49EE826AC107A00718FCC /* SceneDelegate.swift */; };
 		7BF49EEE26AC107A00718FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BF49EEC26AC107A00718FCC /* Main.storyboard */; };
@@ -56,6 +60,10 @@
 		7BB28F4A26B4DE6500184C0D /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		7BB28F4D26B4ED5F00184C0D /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		7BD35E1826B7003500D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 01.14.26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-08-02 01.14.26.gif"; sourceTree = "<group>"; };
+		7BD35E1D26B7678A00D5C985 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		7BD35E2026B79D5A00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.25.37.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-08-02 12.25.37.gif"; sourceTree = "<group>"; };
+		7BD35E2326B7A03E00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.38.04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-08-02 12.38.04.gif"; sourceTree = "<group>"; };
+		7BD8E76426B7F2AF00A0F7B0 /* RocketSim Recording - iPhone 12 - 2021-08-02 18.18.04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "RocketSim Recording - iPhone 12 - 2021-08-02 18.18.04.gif"; sourceTree = "<group>"; };
 		7BF49EE326AC107A00718FCC /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF49EE626AC107A00718FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BF49EE826AC107A00718FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +116,7 @@
 				7B383D1726AF028900ECC04F /* RestaurantDetailViewController.swift */,
 				7B41518626B58CD200E9C733 /* NavigationController.swift */,
 				7B41519F26B676EA00E9C733 /* MapViewController.swift */,
+				7BD35E1D26B7678A00D5C985 /* ReviewViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -158,6 +167,9 @@
 		7BF49EDA26AC107A00718FCC = {
 			isa = PBXGroup;
 			children = (
+				7BD8E76426B7F2AF00A0F7B0 /* RocketSim Recording - iPhone 12 - 2021-08-02 18.18.04.gif */,
+				7BD35E2326B7A03E00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.38.04.gif */,
+				7BD35E2026B79D5A00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.25.37.gif */,
 				7BD35E1826B7003500D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 01.14.26.gif */,
 				7B41519226B63A6900E9C733 /* RocketSim Recording - iPhone 11 - 2021-08-01 11.10.28.gif */,
 				7B41518F26B639DC00E9C733 /* RocketSim Recording - iPhone 11 - 2021-08-01 11.08.04.gif */,
@@ -252,12 +264,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD35E2126B79D5A00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.25.37.gif in Resources */,
 				7B41519026B639DD00E9C733 /* RocketSim Recording - iPhone 11 - 2021-08-01 11.08.04.gif in Resources */,
+				7BD8E76526B7F2AF00A0F7B0 /* RocketSim Recording - iPhone 12 - 2021-08-02 18.18.04.gif in Resources */,
 				7BB28F4B26B4DE6500184C0D /* Nunito-Bold.ttf in Resources */,
 				7BB28F4826B4DE4A00184C0D /* Nunito-Regular.ttf in Resources */,
 				7BD35E1926B7003500D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 01.14.26.gif in Resources */,
 				7B41519326B63A6A00E9C733 /* RocketSim Recording - iPhone 11 - 2021-08-01 11.10.28.gif in Resources */,
 				7BF49EF326AC107E00718FCC /* LaunchScreen.storyboard in Resources */,
+				7BD35E2426B7A03E00D5C985 /* RocketSim Recording - iPhone 12 - 2021-08-02 12.38.04.gif in Resources */,
 				7BF49F0726AD3A8300718FCC /* RocketSim Recording - iPhone 12 - 2021-07-25 15.20.45.gif in Resources */,
 				7B41517D26B5136400E9C733 /* RocketSim Recording - iPhone 12 - 2021-07-31 14.12.21.gif in Resources */,
 				7BF49EF026AC107E00718FCC /* Assets.xcassets in Resources */,
@@ -279,6 +294,7 @@
 				7B383D1826AF028A00ECC04F /* RestaurantDetailViewController.swift in Sources */,
 				7BB28F4E26B4ED5F00184C0D /* RestaurantDetailHeaderView.swift in Sources */,
 				7BF49F0126AC176D00718FCC /* RestaurantTableViewController.swift in Sources */,
+				7BD35E1E26B7678A00D5C985 /* ReviewViewController.swift in Sources */,
 				7B41519B26B6665900E9C733 /* RestaurantDetailMapCell.swift in Sources */,
 				7BF49EE726AC107A00718FCC /* AppDelegate.swift in Sources */,
 				7B383D0E26AD914C00ECC04F /* RestaurantDiffableDataSource.swift in Sources */,
