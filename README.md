@@ -1,5 +1,14 @@
 # UITableViewDiffableDataSource-Swift(WIP)
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
+![image]()
+<table border="0">
+    <tr>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127841632-3ae2d5f8-062b-4794-a6c7-2528a6924147.png" width="100"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127842062-206fcb6e-ee3e-4a12-8d09-cc1a1ad6321f.png" width="100"></td>
+        <td><img src="https://user-images.githubusercontent.com/47273077/127842758-f36061b3-6516-490a-af98-3a959b9b8436.png" width="100"></td>
+         <td><img src="https://user-images.githubusercontent.com/47273077/127842912-58da18de-0ed4-477b-bd22-587c76eb28d2.png" width="100"></td>
+    </tr>
+</table>
 
 ## Context  
 A diffable data source object is a specialized type of data source that works together with your table view object. It provides the behavior you need to manage updates to your table view’s data and UI in a simple, efficient way.  
