@@ -1,6 +1,5 @@
 # UITableViewDiffableDataSource-Swift(WIP)
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
-![image]()
 <table border="0">
     <tr>
         <td><img src="https://user-images.githubusercontent.com/47273077/127841632-3ae2d5f8-062b-4794-a6c7-2528a6924147.png" width="100"></td>
