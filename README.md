@@ -98,14 +98,14 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
     </tr>
 </table>
     
-### Routing With MapKit 
+### Animation
 <table border="0">
     <tr>
         <tr>
             <th>StandardAnimation</th>
             <th>SpringAnimation</th>
         </tr>
-        <td><img src="https://user-images.githubusercontent.com/47273077/127778176-1ff08ad5-b5fb-4ad2-a837-97e24a551be6.png" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-02%2012.38.04.gif" width="300"></td>
         <td><img src="https://user-images.githubusercontent.com/47273077/127778215-fd130ff8-f72a-4565-a9de-94d564b94f99.png" width="300"></td>
     </tr>
 </table>
