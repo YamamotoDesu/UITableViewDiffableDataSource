@@ -176,7 +176,7 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
     }
 ```
     
-###Importing photos with UIImagePickerController  
+### Importing photos with UIImagePickerController  
 <img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-03%2009.46.44.gif" width="300">    
 
 ```swift  
