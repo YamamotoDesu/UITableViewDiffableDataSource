@@ -174,6 +174,7 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
                         }, completion: nil)
 
     }
+```
     
 ###Importing photos with UIImagePickerController
 ```swift  
@@ -188,8 +189,6 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
         dismiss(animated: true, completion: nil)
     }
 ```
-    
-### 
 
 ### Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
 <img src="https://user-images.githubusercontent.com/47273077/127734414-c5409c84-54a4-41e7-9ff1-f140e2185d8b.png" width="200">  
