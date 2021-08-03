@@ -36,6 +36,10 @@ class RestaurantTableViewController: UITableViewController {
     lazy var dataSource = configureDataSource()
     var isDynamicLargeType = false
     
+    @IBAction func unwindToHome(segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
