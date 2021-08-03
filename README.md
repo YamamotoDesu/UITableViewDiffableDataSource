@@ -175,7 +175,21 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
 
     }
     
+```Importing photos with UIImagePickerController
+```swift  
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            photoImageView.image = selectedImage
+            photoImageView.contentMode = .scaleAspectFit
+            photoImageView.clipsToBounds = true
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 ```
+    
+### 
 
 ### Returns the swipe actions to display on the leading edge of the row(iOS 11 and onward)
 <img src="https://user-images.githubusercontent.com/47273077/127734414-c5409c84-54a4-41e7-9ff1-f140e2185d8b.png" width="200">  
