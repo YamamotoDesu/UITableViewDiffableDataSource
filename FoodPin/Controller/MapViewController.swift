@@ -74,7 +74,7 @@ class MapViewController: UIViewController {
                     }
                     
                     // 6.
-                    self.mapView.showAnnotations([sourceAnnotation,destinationAnnotation], animated: true )
+                    self.mapView.showAnnotations([sourceAnnotation, destinationAnnotation], animated: true )
                     
                     // 7.
                     let directionRequest = MKDirections.Request()

@@ -27,18 +27,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newphoto" translatesAutoresizingMaskIntoConstraints="NO" id="PiQ-9r-8h7">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newphoto" translatesAutoresizingMaskIntoConstraints="NO" id="PiQ-9r-8h7">
                                                     <rect key="frame" x="20" y="11" width="374" height="178"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemGray6Color"/>
-                                            <constraints>
-                                                <constraint firstItem="PiQ-9r-8h7" firstAttribute="top" secondItem="Qet-00-xYv" secondAttribute="topMargin" id="0QB-F8-ITS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="PiQ-9r-8h7" secondAttribute="bottom" id="I9g-nP-BaP"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="PiQ-9r-8h7" secondAttribute="trailing" id="Vp1-b4-txe"/>
-                                                <constraint firstItem="PiQ-9r-8h7" firstAttribute="leading" secondItem="Qet-00-xYv" secondAttribute="leadingMargin" id="peJ-5J-9ie"/>
-                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="100" id="XdO-6H-okn">
@@ -231,6 +226,12 @@
                                 <segue destination="ubJ-yd-xe4" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="3nP-RS-TNW"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="2D7-xi-8LF">
+                            <color key="tintColor" name="whiteBlack"/>
+                            <connections>
+                                <action selector="saveButtonTapped:" destination="8P5-D7-Nck" id="LKA-Vt-Ypy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="900"/>
                     <connections>
@@ -245,7 +246,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UoR-zE-RJx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ubJ-yd-xe4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="704" y="-899"/>
+            <point key="canvasLocation" x="703" y="-1155"/>
         </scene>
         <!--FoodPin-->
         <scene sceneID="aIT-h4-fuS">
@@ -412,13 +413,35 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="FoodPin" id="nUJ-6W-4Eg">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="8cW-bS-d40">
+                            <color key="tintColor" name="whiteBlack"/>
                             <connections>
                                 <segue destination="abc-M8-wNW" kind="presentation" identifier="addRestaurant" id="bJe-ts-ko5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="emptyImageView" destination="Xcu-3J-3Zc" id="W7j-tv-Jon"/>
+                        <outlet property="emptyRestaurantView" destination="zmW-J5-5Ga" id="f4N-gG-O0P"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwH-OX-W9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="zmW-J5-5Ga">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="emptydata" translatesAutoresizingMaskIntoConstraints="NO" id="Xcu-3J-3Zc">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        </imageView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="S2Z-qb-Ac1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Xcu-3J-3Zc" secondAttribute="bottom" id="9Mf-sT-NLa"/>
+                        <constraint firstItem="Xcu-3J-3Zc" firstAttribute="trailing" secondItem="S2Z-qb-Ac1" secondAttribute="trailing" id="NL4-Gt-CNJ"/>
+                        <constraint firstItem="Xcu-3J-3Zc" firstAttribute="leading" secondItem="S2Z-qb-Ac1" secondAttribute="leading" id="emx-L6-Jd6"/>
+                        <constraint firstItem="Xcu-3J-3Zc" firstAttribute="top" secondItem="zmW-J5-5Ga" secondAttribute="top" id="gYc-PW-z7h"/>
+                    </constraints>
+                </view>
             </objects>
             <point key="canvasLocation" x="705.79710144927537" y="-137.27678571428569"/>
         </scene>
@@ -831,7 +854,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sk2-VL-TYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-204" y="-900"/>
+            <point key="canvasLocation" x="-204" y="-1154"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -840,6 +863,7 @@
     <resources>
         <image name="angry" width="78" height="103"/>
         <image name="cool" width="78" height="83"/>
+        <image name="emptydata" width="1440" height="1024"/>
         <image name="happy" width="78" height="86"/>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
@@ -850,6 +874,9 @@
         <image name="xmark" catalog="system" width="128" height="113"/>
         <namedColor name="NavigationBarTitle">
             <color red="0.85490196078431369" green="0.37647058823529411" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteBlack">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -65,7 +65,7 @@ class RestaurantDetailViewController: UIViewController {
         //Configure header view
         headerView.nameLabel.text = resutaurant.name
         headerView.typeLabel.text = resutaurant.type
-        headerView.headerImageView.image = UIImage(named: resutaurant.image)
+        headerView.headerImageView.image = UIImage(data: resutaurant.image)
         
         let heartImage = resutaurant.isFavorite ? "heart.fill" : "heart"
         headerView.heartButton.tintColor = resutaurant.isFavorite ? .systemYellow : .white

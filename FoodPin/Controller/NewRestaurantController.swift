@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class NewRestaurantController: UITableViewController {
+    
+    var restaurant: Restaurant!
     
     @IBOutlet var nameTextField: RoundedTextField! {
         didSet {
@@ -53,9 +56,48 @@ class NewRestaurantController: UITableViewController {
             photoImageView.layer.masksToBounds = true
         }
     }
-
+    
+    @IBAction func saveButtonTapped(_ sender: Any) {
+        if nameTextField.text != "", typeTextField.text != "", addressTextField.text != "", phoneTextField.text != "", descriptionTextField.text != "" {
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+                restaurant.name = nameTextField.text!
+                restaurant.type = typeTextField.text!
+                restaurant.location = addressTextField.text!
+                restaurant.phone = phoneTextField.text!
+                restaurant.summary = descriptionTextField.text!
+                restaurant.isFavorite = false
+                
+                if let imageData = photoImageView.image?.pngData() {
+                    restaurant.image = imageData
+                }
+                
+                print("Saving data to contex...")
+                appDelegate.saveContext()
+                dismiss(animated: true)
+            }
+            return
+        }
+            
+        let alertMessage = UIAlertController(title: "Oops", message: "We can't proceeed because one of rhe fields is blank. Please note that all fields are required", preferredStyle: .alert)
+        alertMessage.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alertMessage, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Get the superview's layout
+        let margins = photoImageView.superview!.layoutMarginsGuide
+        photoImageView.translatesAutoresizingMaskIntoConstraints = false
+        photoImageView.leadingAnchor.constraint(equalTo: margins.leadingAnchor).isActive = true
+        photoImageView.trailingAnchor.constraint(equalTo: margins.trailingAnchor).isActive = true
+        photoImageView.topAnchor.constraint(equalTo: margins.topAnchor).isActive = true
+        photoImageView.bottomAnchor.constraint(equalTo: margins.bottomAnchor).isActive = true
+        
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
         
         // custom naviagation bar
         if let appearance = navigationController?.navigationBar.standardAppearance {

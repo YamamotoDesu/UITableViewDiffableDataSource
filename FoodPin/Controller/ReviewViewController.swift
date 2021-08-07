@@ -24,7 +24,7 @@ class ReviewViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        backgroundImageView.image = UIImage(named: resutaurant.image)
+        backgroundImageView.image = UIImage(data: resutaurant.image)
         
         // Applying the blur effect
         let blurEffect = UIBlurEffect(style: .dark)

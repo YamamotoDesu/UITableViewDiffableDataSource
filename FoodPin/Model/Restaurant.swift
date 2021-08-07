@@ -1,13 +1,34 @@
 //
-//  Restaurant.swift
+//  Restaurant+CoreDataProperties.swift
 //  FoodPin
 //
-//  Created by 山本響 on 2021/07/25.
+//  Created by 山本響 on 2021/08/07.
+//
 //
 
-import Foundation
 
-struct Restaurant:Hashable {
+import Foundation
+import CoreData
+
+
+public class Restaurant: NSManagedObject {
+
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<Restaurant> {
+        return NSFetchRequest<Restaurant>(entityName: "Restaurant")
+    }
+
+    @NSManaged public var image: Data
+    @NSManaged public var isFavorite: Bool
+    @NSManaged public var location: String
+    @NSManaged public var name: String
+    @NSManaged public var phone: String
+    @NSManaged public var ratingText: String?
+    @NSManaged public var summary: String
+    @NSManaged public var type: String
+}
+
+extension Restaurant {
+    
     enum Rating: String {
         case awesome
         case good
@@ -25,12 +46,23 @@ struct Restaurant:Hashable {
             }
         }
     }
-    var name: String = ""
-    var type: String = ""
-    var location: String = ""
-    var phone: String = ""
-    var description: String = ""
-    var image: String = ""
-    var isFavorite: Bool = false
-    var rating: Rating?
+    
+    var rating: Rating? {
+        get {
+            guard let ratingText = ratingText else {
+                return nil
+            }
+            
+            return Rating(rawValue: ratingText)
+        }
+        
+        set {
+            self.ratingText = newValue?.rawValue
+        }
+    }
+}
+
+
+extension Restaurant : Identifiable {
+
 }

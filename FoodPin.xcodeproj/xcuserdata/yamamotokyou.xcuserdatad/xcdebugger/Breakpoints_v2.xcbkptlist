@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B9485273-52E0-4EB8-B596-D9E81D101981"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FoodPin/Controller/RestaurantTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "traitCollectionDidChange(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "231">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "370">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "629">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "844">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1059">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1274">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1523">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1744">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1974">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "2204">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "2434">
+               </Location>
+               <Location
+                  uuid = "E3C0A286-4B49-4BE2-A5CA-F9E6267EE395 - c182b5ff86a29b9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FoodPin.RestaurantTableViewController.traitCollectionDidChange(Swift.Optional&lt;__C.UITraitCollection&gt;) -&gt; ()"
+                  moduleName = "FoodPin"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamotokyou/iOSApp/FoodPin/FoodPin/Controller/RestaurantTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "2664">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
