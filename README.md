@@ -2,10 +2,10 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
 <table border="0">
   <tr>
-    <th>Empty List</th>
+    <th>Empty</th>
     <th>Registration</th>
-    <th>Resutaurant List</th>
-    <th>Resutaurant Info</th>
+    <th>List</th>
+    <th>RInfo</th>
     <th>Routing</th>
     <th>Reviewing</th>
   </tr>
