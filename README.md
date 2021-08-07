@@ -5,7 +5,7 @@
     <th>Empty</th>
     <th>Registration</th>
     <th>List</th>
-    <th>RInfo</th>
+    <th>Info</th>
     <th>Routing</th>
     <th>Reviewing</th>
   </tr>
