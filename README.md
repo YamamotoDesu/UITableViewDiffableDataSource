@@ -2,7 +2,7 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
 <table border="0">
   <tr>
-    <th>Empty Resutaurant List</th>
+    <th>Empty List</th>
     <th>Registration</th>
     <th>Resutaurant List</th>
     <th>Resutaurant Info</th>
