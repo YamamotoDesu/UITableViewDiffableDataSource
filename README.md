@@ -1,4 +1,4 @@
-# UITableViewDiffableDataSource-Swift(WIP)
+# UITableViewDiffableDataSource-Swift
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
 <table border="0">
   <tr>
