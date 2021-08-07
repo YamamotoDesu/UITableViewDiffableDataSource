@@ -2,7 +2,15 @@
 ![platforms](https://img.shields.io/badge/platforms-iOS-333333.svg)  
 <table border="0">
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/47273077/128583930-0ce76398-aaad-4293-8102-16982c4023ee.png" width="100"></td>
+    <th>Empty Resutaurant List</th>
+    <th>Registration</th>
+    <th>Resutaurant List</th>
+    <th>Resutaurant Info</th>
+    <th>Routing</th>
+    <th>Reviewing</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/47273077/128584379-62dd0a99-4eba-408a-9156-5fe0e873fce8.png" width="100"></td>
     <td><img src="https://user-images.githubusercontent.com/47273077/127940409-dc79c644-cacf-4b87-89dd-7afd21343baa.png" width="100"></td>
     <td><img src="https://user-images.githubusercontent.com/47273077/127842062-206fcb6e-ee3e-4a12-8d09-cc1a1ad6321f.png" width="100"></td>
     <td><img src="https://user-images.githubusercontent.com/47273077/127842758-f36061b3-6516-490a-af98-3a959b9b8436.png" width="100"></td>
