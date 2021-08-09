@@ -123,8 +123,8 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
             <th>StandardAnimation</th>
             <th>SpringAnimation</th>
         </tr>
-        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-02%2012.38.04.gif" width="300"></td>
-        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-02%2012.25.37.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Gif/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-02%2012.38.04.gif" width="300"></td>
+        <td><img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Gif/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-02%2012.25.37.gif" width="300"></td>
     </tr>
 </table>
 
@@ -186,7 +186,7 @@ https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Fo
 ```
     
 ### Importing photos with UIImagePickerController  
-<img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-03%2009.46.44.gif" width="300">    
+<img src="https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/Gif/RocketSim%20Recording%20-%20iPhone%2012%20-%202021-08-03%2009.46.44.gif" width="300">    
 
 https://github.com/YamamotoDesu/UITableViewDiffableDataSource-Swift/blob/main/FoodPin/Controller/NewRestaurantController.swift  
 ```swift  
